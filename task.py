@@ -24,3 +24,31 @@
 #
 #Delete these comments before commit!
 #Good luck.
+deposite= input("how much that you want deposite")
+takingmoney=input("how much that you want to take money?")
+
+class thebank :
+  def __init__(self,name,surname,age):
+    self.name = name
+    self.surname= surname 
+    self.age= age
+
+  def sayhello(self):
+    print("welcome our bank {name} ".format(name=self.name))
+
+class customer (thebank):
+  def __init__(self,name,age):
+    self.name =name
+    self.age=age 
+    self.remainder=100
+  def what_is_remainder(self):
+    return self.remainder
+  def todeposite(self):
+    self.remainder += deposite
+  def takemoney(self):
+    self.remainder -=takingmoney
+
+customer1 = customer("kemal",23)
+print(customer1.sayhello())
+print(customer1.what_is_remainder())
+
