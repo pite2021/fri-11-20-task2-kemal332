@@ -1,4 +1,4 @@
-#
+#for checking
 #Banking simulator. Write a code in python that simulates the banking system. 
 #The program should:
 # - be able to create new banks
